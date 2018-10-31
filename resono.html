@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Coding-Challenge-8</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- Bootstrap core CSS     -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"/>
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+  <link href="css/resono.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="index-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-pink-blue fixed-top navbar-transparent " color-on-scroll="200">
+			<div class="container">
+				<div class="navbar-translate">
+					<a class="navbar-brand"  href="javascript:void(0)" onclick="scrollToHome()" rel="tooltip" title="Effective and Productivity" data-placement="bottom" target="_blank">
+						<img src="img/resono.png" alt="Teamwork" class="pc" width="100px" />
+						<img src="img/logo-sp.png" alt="Teamwork" class="sp" width="30px" />
+					</a>
+					<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-bar bar1"></span>
+						<span class="navbar-toggler-bar bar2"></span>
+						<span class="navbar-toggler-bar bar3"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse justify-content-end" data-nav-image="./assets/img/blurred-image-1.jpg">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollToTestimonials()">
+								<i class="now-ui-icons business_bulb-63"></i><p>Welcome!</p>
+							</a>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollToProductivity()">
+								<i class="now-ui-icons sport_trophy"></i><p>About us</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollToActions()">
+								<i class="now-ui-icons sport_user-run"></i><p>Actions</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0)" onclick="scrollToContact()">
+								<i class="now-ui-icons users_single-02"></i><p>Contact us</p>
+							</a>
+						</li>
+						<!-- (for future use)
+						<li class="nav-item">
+							<a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/kuonsammanak/" target="_blank">
+								<i class="fa fa-twitter"></i>
+								<p class="d-lg-none d-xl-none">Twitter</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim/" target="_blank">
+								<i class="fa fa-facebook-square"></i>
+								<p class="d-lg-none d-xl-none">Facebook</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/kuonsammanak/" target="_blank">
+								<i class="fa fa-instagram"></i>
+								<p class="d-lg-none d-xl-none">Instagram</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" rel="tooltip" title="Follow us on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/sammanak-kuon-51925861/" target="_blank">
+								<i class="fa fa-linkedin"></i>
+								<p class="d-lg-none d-xl-none">LinkedIn</p>
+							</a>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+			<div class="page-header clear-filter" filter-color="pink-blue">
+				<div class="page-header-image" data-parallax="true" style="background-image: url('img/header.jpg');">
+				</div>
+				<div class="container">
+						<div class="content-center brand">
+							<img src="img/logo.jpg" alt="Resono" class="pc n-logo"/>
+							<img src="img/logo.jpg" alt="Resono" class="sp n-logo" width="100px" />
+								<h1 class="h1-seo">BPO Resono Inc.</h1>
+								<h3>Delivering cost-effetive offshore BPO solutions to Australia and New Zealand.</h3>
+						</div>
+				</div>
+			</div>
+			<div class="container">
+                <div class="container text-center" id="testimonials">
+                  <h2 class="title" ><em>Welcome!</em></h3>
+				  <h5 align="left">Welcome to your first step towards achieving a successful, cost-effective BPO solution for your business with RESONO. 
+				  We are a Australasian managed offshore outsource company that can help minimise your business operational costs by performing 
+				  your work for you.</h5>
+				  <h5 align="left">Our objective is to provide you with a seamless transition to offshoring your business functions to our office in The Philippines. 
+				  We offer a number of outsourcing solutions designed to increase your productivity and revenue without compromising on quality or your 
+				  brand identity onshore.</h5>
+				  <h5 align="left">Development in South-East Asia is flourishing, and at a time of global economic uncertainty The Philippines is generating strong 
+				  annual growth - a large part due to the successful BPO industry.</h5>
+				  <h5 align="left">Take advantage of the unique characteristics on offer in this country and utilise our BPO solutions to deliver a competitive 
+                  advantage to your business.<br><br></h5>
+                  <img src="img/cpsign.png" align="left">
+                  <h5 align="left" style="clear: left">Chris Page</h5>
+                  <h6 align="left">President</h6>
+                </div>
+            </div>
+			<div class="modal fade" id="modalProject1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								<i class="now-ui-icons ui-1_simple-remove"></i>
+							</button>
+							<h4 class="title">Business Process Outsourcing</h4>
+						</div>
+						<div class="modal-body">
+							<p>RESONO is a Business Process Outsourcing service (BPO), designed and managed specifically for servicing businesses from Australia and New Zealand. Broadly speaking, a BPO service is the contracting of your operations and responsibilities of a specific function within your business to RESONO, as a third party service provider. You give us the work, we do it for you.</p>
+							<p>RESONO aims to keep things as simple as possible, and catagorise our functions into either a Low, Medium or Complex back of house (BOH) banding - which includes your internal business functions such as:</p>
+							<ul>
+								<li>Financial admin - accounting, payroll and bookeeping.</li>
+								<li>Application validation/processing</li>
+								<li>Software testing</li>
+								<li>IT and helpdesk support</li>
+								<li>General admin</li>
+								<li>Data management</li>
+								<li>HR</li>
+								<li>Claims processing</li>
+							</ul>
+							<p>Or front of house (FOH) banding - which includes customer-related services such as:</p>
+							<ul>
+								<li>Lead qualification</li>
+								<li>Customer relationship management</li>
+								<li>NPS (Net Promotor Score)</li>
+								<li>Customer surveys</li>
+								<li>Mystery shopping</li>
+								<li>Setting appointments</li>
+								<li>Consumer enquiries</li>
+								<li>Live chat / moderation</li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-center btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modalProject2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								<i class="now-ui-icons ui-1_simple-remove"></i>
+							</button>
+							<h4 class="title">Company Profile</h4>
+						</div>
+						<div class="modal-body">
+							<p>RESONO provides tailored BPO solutions to Australian and New Zealand businesses, for both short and long term projects. If there is a function in your business that you think you're paying too much for, we can help. You send the work to us, we do it for you.</p>
+							<p>Balanced with fostering successful multi cultural relationships with our clients and workforce, RESONO excels at delivering results for your business at the most competitive rate available.</p>
+							<p>Extensive off-shore experience has rounded RESONO's management team's perspective in the BPO environment and we take pride in the ability to act under pressure to deliver quality results while maintaining productive relationships with our clients.</p>
+						</div>
+						<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modalProject3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								<i class="now-ui-icons ui-1_simple-remove"></i>
+							</button>
+							<h4 class="title title-up">Key Personnel</h4>
+						</div>
+						<div class="modal-body">
+							<p>RESONO holds within its management team over 16 years experience working in the BPO low-cost operating environment, serving Australian clients seeking to maximise their revenues by off-shoring projects to South-East Asia.</p>
+							<h6>Chris Page | <em>President</em></h6>
+							<img src="img/cpagepic.jpg">
+							<p>Born in Christchurch, and having worked in New Zealand, Australia, Malaysia, Japan, the UK, now based in Manila, Chris brings to RESONO 8 years of experience working in the BPO industry, managing transition projects for large Australian companies to offshore suppliers in Asia. Chris will ensure your commercial returns are maximised by managing the development of end-to-end processes to generate the best returns from your RESONO BPO solution.</p>
+							<h6>Kee-Hui Wang | <em>Director of Operations<em></h6>
+							<img src="img/keepic.jpg">
+							<p>Kee-Hui's extensive knowledge of BPO operations models started 8 years ago when he was working in the financial industry in Kuala Lumpur. During the rapid expansion of the BPO industry in Malaysia in the mid-2000’s,Kee-Hui successfully managed several expansion projects for Australian clients into South-East Asia.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modalProject4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header justify-content-center">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									<i class="now-ui-icons ui-1_simple-remove"></i>
+								</button>
+								<h4 class="title">Services Available</h4>
+							</div>
+							<div class="modal-body">
+								<p>RESONO provides any combination of Low, Medium and Complex BOH (back of house) office functions, and FOH (front of house) customer facing functions. Your function may be back office, inbound calling, outbound calling, or a combination of all three. RESONO will develop and implement cheap and effective solutions for performing your business tasks.</p>
+								<p>RESONO is certainly not limited to only providing these solutions to your business, but as a guide we are capable of performing the following functions:</p>
+								<ul>
+									<li>Financial admin - accounting, payroll and bookeeping</li>
+									<li>Application validation/processing</li>
+									<li>Software testing</li>
+									<li>IT and helpdesk support</li>
+									<li>General admin</li>
+									<li>Data management</li>
+									<li>HR admin</li>
+									<li>Claims processing</li>
+									<li>Lead qualification</li>
+									<li>Customer relationship management</li>
+									<li>NPS (Net Promotor Score)</li>
+									<li>Customer surveys</li>
+									<li>Mystery shopping</li>
+									<li>Setting appointments</li>
+									<li>Consumer enquiries</li>
+									<li>Live chat / moderation</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalProject5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header justify-content-center">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									<i class="now-ui-icons ui-1_simple-remove"></i>
+								</button>
+								<h4 class="title">Features</h4>
+							</div>
+							<div class="modal-body">
+								<p>When choosing to offshore your business there are a number of considerations that need to be made: location, local infrastructure, operating costs, culture, political stability and economic variables.</p>
+								<p>The Philippines is the market leading location in the BPO industry because of:</p>
+								<ul>
+									<li>Excellent local IT infrastructure.</li>
+									<li>Government investment and policy favoring BPO operations.</li>
+									<li>Lower attrition rates in comparison to other offshore markets.</li>
+									<li>A service orientated culture with uniquely westernised value system in South-East Asia.</li>
+									<li>Market leading cost advantages.</li>
+									<li>Excellent English speaking capability, with high tertiary qualification graduates in the workforce.</li>
+								</ul>
+								<p>Based on these features, RESONO's BPO solution in Manila will deliver a significant competitive advantage to your business in terms of both cost and quality of work delivered.</p>
+								<p>RESONO is dedicated to quality solutions and low risk transition strategies for clients and we maintain an Australasian management team on site in Manila to conduct regular, transparent communications with you, dedicated to ensuring our results exceed your expectations.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalProject6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header justify-content-center">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									<i class="now-ui-icons ui-1_simple-remove"></i>
+								</button>
+								<h4 class="title">Benefits</h4>
+							</div>
+							<div class="modal-body">
+								<p>RESONO is committed to providing a BPO model that delivers maximised cost savings and enhanced efficiencies to your business. While being responsive to your needs, our professional solutions and performance will enhance your business reputation. Unique benefits that you can expect from running your project through RESONO include:</p>
+								<ul>
+									<li>All training and on site management support will be provided by a management team harnessing 16 years of experience in the low cost BPO environment in Australia and Asia.</li>
+									<li>Based on this experience, RESONO will strive to propose and assist implementing proactive solutions for improving operational efficiency and key metrics for your business.</li>
+									<li>RESONO will provide all our services to you meeting an agreed QA process, with regular performance calibrations with supplier stakeholders.</li>
+									<li>Proactive training, development and mentoring for all our staff is part what makes working for RESONO so attractive, and we take pride on our ability to mentor our staff and encourage employees to be bold in their work practices to deliver greater results for you.</li>
+									<li>Timely and relevant performance reporting will be delivered to you in your preferred format, or we can design this for you. We will also integrate quarterly business reviews to suggest further optimisation and cost savings proposals for your business as the project evolves.</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="main">
+					<!-- Productivity -->
+					<div class="section" id="productivity">
+						<div class="container text-center">
+						<h2 class="title">About us</h2>
+						<h4></h4>>
+						<div class="row productivity-row">
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject1">
+									<img src="img/project2.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<a href="#" class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject1">What we do</a>
+							</div>
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject2">
+									<img src="img/project1.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<button class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject2">Company Profile</button>
+							</div>
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject3">
+									<img src="img/project3.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<button class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject3">Key Personel</button>
+							</div>
+						</div>
+						<div class="row productivity-row">
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject4">
+									<img src="img/project7.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<a href="#" class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject4">Services Available</a>
+							</div>
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject5">
+									<img src="img/project5.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<button class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject5">Features</button>
+							</div>
+							<div class="col-md">
+								<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject6">
+									<img src="img/project6.jpg" alt="Image" class="img-raised card" height="250">
+								</a>
+								<button class="btn btn-pink-blue" data-toggle="modal" data-target="#modalProject6">Benifits</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Actions -->
+				<div class="section bg-light" id="actions">
+					<div class="container">
+						<div class="title text-center">
+							<h2>Teamwork Actions</h2>
+							<h5>Implement a Plan of Action to Strengthen Teamwork</h5>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-lg-8 col-md-12">
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+									</ol>
+									<div class="carousel-inner" role="listbox">
+										<div class="carousel-item active">
+											<h6 align="center">Efficent</h6>
+											<img class="d-block" src="img/action-01.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<h6 align="center">Cost Effective</h6>
+											<img class="d-block" src="img/action-02.jpg" alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<h6 align="center">Goal Driven Proffesionals</h6>
+											<img class="d-block" src="img/action-03.jpg" alt="Third slide">
+										</div>
+										<div class="carousel-item">
+											<h6 align="center">Exceeding Expectations</h6>
+											<img class="d-block" src="img/action-04.jpg" alt="Fourth slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<i class="now-ui-icons arrows-1_minimal-left"></i>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<i class="now-ui-icons arrows-1_minimal-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		<div id="contact" class="bg-light">
+			<h2 class="title">Let's Get In Touch!</h2>
+			<div class="row">
+				<div class="col-md container col-form-contact subscribe">
+					<div class="text-center">
+						<h4 class="title-up">Stay up to date. Please subscribe us!</h4>
+<!--End mc_embed_signup-->
+						<a href="http://eepurl.com/dLZI2M" class="btn btn-pink-blue btn-subscribe" target="_blank">Subscribe</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15447.212834097256!2d121.017566!3d14.5532434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba0c9db1efbcc1ab!2sBPO+Resono+Inc!5e0!3m2!1sen!2sph!4v1540942566974" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+			</div>
+		</div>
+
+		<div class="main">
+			<footer class="footer" data-background-color="pink-blue">
+				<div class="container">
+					<div class="copyright">
+							&copy;
+							<script>
+									document.write(new Date().getFullYear())
+							</script>, Designed &amp; Coded by
+							<a href="https://www.linkedin.com/in/mark-adolf-ferolino-214654149/" target="_blank">Mark Ferolino</a>.
+							this is a mock page.
+					</div>
+				</div>
+			</footer>
+		</div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+<script src="js/main.js"></script>
+</html>
